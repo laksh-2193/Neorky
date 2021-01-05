@@ -85,7 +85,7 @@ public class Dashboard extends AppCompatActivity {
         findViewById(R.id.anouncement_bell).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // announcementshow();
+               announcementshow();
             }
         });
 

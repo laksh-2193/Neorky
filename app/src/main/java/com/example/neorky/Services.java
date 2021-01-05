@@ -20,7 +20,9 @@ public class Services extends AppCompatActivity {
         findViewById(R.id.back_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                startActivity(new Intent(Services.this,Dashboard.class));
+                overridePendingTransition(0,0);
+                finish();
             }
         });
 
@@ -172,4 +174,10 @@ public class Services extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Services.this,Dashboard.class));
+        overridePendingTransition(0,0);
+        finish();
+    }
 }
