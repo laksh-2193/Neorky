@@ -168,8 +168,6 @@ public class Services extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(0,0);
                 finish();
-
-
             }
         });
     }
