@@ -85,7 +85,7 @@ public class Dashboard extends AppCompatActivity {
         findViewById(R.id.anouncement_bell).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                announcementshow();
+               // announcementshow();
             }
         });
 
@@ -368,7 +368,6 @@ public class Dashboard extends AppCompatActivity {
 
                 }
                 else{
-                    announcementshow();
                     Toast.makeText(getApplicationContext(),"Please update your app",Toast.LENGTH_LONG).show();
                 }
 
@@ -406,10 +405,6 @@ public class Dashboard extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     String ann_txt = snapshot.child("Announcement").getValue().toString();
-
-
-
-
                     dialog = new Dialog(Dashboard.this);
                     dialog.setContentView(R.layout.announcement_dialog);
                     dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
