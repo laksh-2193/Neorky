@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "908376543708",
+    "firebase_url": "https://neorky-d622a.firebaseio.com",
+    "project_id": "neorky-d622a",
+    "storage_bucket": "neorky-d622a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908376543708:android:5f8fd067a743a541cdbf19",
+        "android_client_info": {
+          "package_name": "com.example.neorky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908376543708-r0u3orhnp5spor8clnpev64jh244qotq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsG3dMAXN2hxOcqyaCh3u1IpMzhBXRCXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908376543708-r0u3orhnp5spor8clnpev64jh244qotq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

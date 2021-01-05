@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Maximum Budget"
+            android:fontFamily="@font/resular"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 0/-"
+            android:fontFamily="@font/resular"
+            android:textColor="#3949AB"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+
+            android:textSize="25dp"
+            />
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/price_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bsb_bubble_color="@color/colorPrimary"
+            app:bsb_bubble_text_color="#fff"
+            app:bsb_second_track_color="@color/colorPrimary"
+            app:bsb_max="1500"
+            app:bsb_min="100"
+            app:bsb_track_color="#B3ADAD"
+            android:layout_marginTop="10dp"
+            app:bsb_progress="0"
+            app:bsb_section_count="7"
+            app:bsb_section_text_position="bottom_sides"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_gravity="end"
+            android:fontFamily="@font/resular"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

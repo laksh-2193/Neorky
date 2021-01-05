@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_marginRight="15dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FDD835"
+
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/team_work"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/username"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Why business account?"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/resular"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Get work in your city directly from customers.*"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+
+        android:textColor="#000"
+
+        android:textSize="18dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Millions of customers can give tons of happiness to you.*"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+        android:textColor="#000"
+
+        android:textSize="18dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Cancel Anytime.*"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+        android:textColor="#000"
+
+        android:textSize="18dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Trial period available.*"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+        android:textColor="#000"
+
+        android:textSize="18dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Special discounts for current users*"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+        android:textColor="#000"
+
+        android:textSize="18dp"
+        />
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="*T/C Apply"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/mulish"
+        android:textColor="#000"
+
+        android:textSize="10dp"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/subscribe_now"
+        android:layout_width="match_parent"
+
+
+        android:layout_marginLeft="50dp"
+        android:padding="15dp"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"
+
+        android:text="Subscribe now"
+        android:textAllCaps="false"
+
+
+
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_btn_business"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

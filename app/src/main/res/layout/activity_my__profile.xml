@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_margin="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/header"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="85dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:layout_height="85dp"
+                android:src="@drawable/user"
+                app:civ_border_width="2dp"
+                android:elevation="5dp"
+                app:civ_border_color="#fff"/>
+            <TextView
+                android:id="@+id/username"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginStart="18dp"
+
+                android:fontFamily="@font/resular"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+
+                android:layout_marginTop="32dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID : 44dfkshbxsz"
+                android:layout_below="@id/username"
+                android:layout_marginStart="18dp"
+
+
+
+                android:textColor="#fff"
+                android:layout_toRightOf="@id/profile_image"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:textSize="12dp"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-57dp"
+            android:weightSum="2"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_bg"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:text="0"
+                    android:id="@+id/t_req"
+                    android:textColor="#FF8460"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:textSize="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/services"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Requests"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/resular"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#FF8460"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_bg"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/serv"
+
+                    android:layout_width="80dp"
+                    android:text="12"
+
+                    android:textColor="#FFB300"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:textSize="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/services"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/resular"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#FFB300"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Edit Profile"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp_final_2"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/resular"
+            />
+        <TextView
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Sign Out"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp_final_2"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/resular"
+            />
+        <TextView
+            android:id="@+id/help_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="Help and Support"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_help_black_24dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp_final_2"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/resular"
+            />
+        <TextView
+            android:id="@+id/buy_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="Buy Business Profile"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp_final_2"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:fontFamily="@font/resular"
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

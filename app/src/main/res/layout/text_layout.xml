@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/header2"
+                android:scaleType="fitXY"
+                />
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+                    android:paddingBottom="20dp"
+            android:layout_height="wrap_content"
+
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="8dp"
+            android:elevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/resular"
+                    android:text="Domestic Services"
+                    android:textColor="#000"
+                    android:textSize="24dp"
+
+                    />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:padding="10dp"
+                            android:id="@+id/painter"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/painter"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Painter"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:id="@+id/carpenter"
+                            android:padding="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/carpenter"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Carpenter"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/house_maid"
+                            android:layout_width="110dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/maid"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="House Maid"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/electrician"
+
+                            android:layout_width="110dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/electrician"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Electrician"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/plumber"
+                            android:layout_width="110dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/plumber"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Plumber"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/labour"
+                            android:layout_width="110dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="110dp"
+                            android:src="@drawable/labout"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Labour"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/resular"
+                            android:textColor="#000"
+                            android:layout_marginStart="16dp"
+
+                            android:textStyle="bold"
+
+
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:paddingBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/resular"
+                        android:text="Semi Industrial Services"
+                        android:textColor="#000"
+                        android:textSize="24dp"
+
+                        />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/boutique"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/boutique"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Boutique"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/rooms"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/rooms"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rooms"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/counselling"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/counselling"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Counselling"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:paddingBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/resular"
+                        android:text="Industrial Services"
+                        android:textColor="#000"
+                        android:textSize="24dp"
+
+                        />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/itservices"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/it"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="IT Services"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/food"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/food"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Food Services"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/coaching"
+                                android:layout_width="110dp"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="110dp"
+                                android:src="@drawable/coaching"
+
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Education"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/resular"
+                                android:textColor="#000"
+                                android:layout_marginStart="16dp"
+
+                                android:textStyle="bold"
+
+
+                                android:textSize="18dp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
