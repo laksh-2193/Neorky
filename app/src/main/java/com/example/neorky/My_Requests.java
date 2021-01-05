@@ -235,15 +235,9 @@ public class My_Requests extends AppCompatActivity {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
                                                 try{
-
-
                                                     FirebaseDatabase.getInstance().getReference().child("Users").child(firebaseAuth.getUid()).child("Requests").child("Show_My_Request").child(profession_sent.toUpperCase()).setValue(null);
                                                     FirebaseDatabase.getInstance().getReference().child("Services").child(sstate).child(sdistrict).child(profession_sent.toUpperCase()).child(firebaseAuth.getUid()).setValue(null);
                                                     FirebaseDatabase.getInstance().getReference().child("Services").child(sstate).child(sdistrict).child(profession_sent.toUpperCase()).child("Message").child(firebaseAuth.getUid()).setValue(null);
-
-
-
-
 //                                    startActivity(new Intent(getApplicationContext(),Dashboard.class));
 //                                    overridePendingTransition(0,0);
                                                     FirebaseDatabase.getInstance().getReference().child("Users").child(firebaseAuth.getUid()).child("Requests").child(profession_sent.toUpperCase()).setValue(null);
@@ -251,8 +245,6 @@ public class My_Requests extends AppCompatActivity {
                                                     overridePendingTransition(0,0);
                                                     TastyToast.makeText(getApplicationContext(),"Request deleted",TastyToast.LENGTH_LONG,TastyToast.SUCCESS).show();
                                                     onBackPressed();
-
-
                                                 }
                                                 catch (Exception e){
 

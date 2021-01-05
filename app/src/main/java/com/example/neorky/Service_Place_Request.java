@@ -140,6 +140,7 @@ public class Service_Place_Request extends AppCompatActivity implements Location
         });
         topimgslider = findViewById(R.id.slide_image);
         changedetailsacctoprefession();
+        loader();
 
 
 
@@ -477,17 +478,25 @@ public class Service_Place_Request extends AppCompatActivity implements Location
         }
 
         if(!gpsenabled && !networkenabled){
-            new AlertDialog.Builder(getApplicationContext())
-                    .setTitle("Enable GPS Service")
-                    .setCancelable(false)
-                    .setPositiveButton("Enable", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            try{
+                AlertDialog.Builder builder = new AlertDialog.Builder(Service_Place_Request.this);
+                builder.setTitle("Enable GPS Service");
+                builder.setCancelable(false);
+                builder.setMessage("Please enable GPS service to check your location");
+                builder.setPositiveButton("Enable", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
 
-                        }
-                    }).setNegativeButton("Cancel", null)
-                    .show();
+            }
+            catch (Exception e){
+                TastyToast.makeText(Service_Place_Request.this,"Please enable GPS location service",TastyToast.LENGTH_LONG,TastyToast.WARNING);
+            }
+
         }
 
     }
@@ -510,6 +519,57 @@ public class Service_Place_Request extends AppCompatActivity implements Location
                 .setPermissionListener(permissionListener)
                 .setPermissions(Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION)
                 .check();
+
+    }
+    void loader(){
+        final ProgressDialog progress = new ProgressDialog(this,R.style.MyAlertDialogStyle);
+        progress.setTitle("Checking your location");
+        progress.setMessage("We are checking in which place you live in so that people can reach you accurately");
+        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progress.setIndeterminate(true);
+        progress.setCancelable(false);
+
+        //progress.show();
+        new CountDownTimer(20000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                String uname = area_in.getText().toString().trim();
+                if(uname.equalsIgnoreCase("")){
+
+                    progress.show();
+
+                }
+                else{
+                    progress.dismiss();
+                }
+
+                if(millisUntilFinished<6000){
+                    progress.setTitle("Please switch on GPS services");
+                    progress.setMessage("Fetching data is taking longer time than usual. Please switch on GPS service");
+
+
+                }
+
+
+            }
+
+            @Override
+            public void onFinish() {
+
+               progress.dismiss();
+               if(area_in.getText().toString().trim().equalsIgnoreCase("")){
+                   onBackPressed();
+                   TastyToast.makeText(Service_Place_Request.this,"Failed to get Location. Please try again",TastyToast.LENGTH_LONG,TastyToast.WARNING);
+
+               }
+
+            }
+        }.start();
+
+
+
+
+
 
     }
 

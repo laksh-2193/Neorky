@@ -71,8 +71,6 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
 
         }
         else{
-
-
             //Toast.makeText(Profile_Page.this,firebaseAuth.getUid(),Toast.LENGTH_LONG).show();
             try{
 
@@ -179,7 +177,6 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
 
 
     }
-
     void fetchdata(){
         reff = FirebaseDatabase.getInstance().getReference().child("Users").child(firebaseAuth.getUid()).child("Profile");
         reff.addValueEventListener(new ValueEventListener() {
@@ -243,8 +240,6 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
         }
 
     }
-
-
     void checkenabledsettings(){
         if((ContextCompat.checkSelfPermission(Profile_Page.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) && (ActivityCompat.checkSelfPermission(getApplicationContext(),
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)){
@@ -326,8 +321,6 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
                 .check();
 
     }
-
-
 
     @Override
     public void onBackPressed() {
