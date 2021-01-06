@@ -333,7 +333,6 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
                 .check();
 
     }
-
     @Override
     public void onBackPressed() {
         String dr = district.getText().toString();
