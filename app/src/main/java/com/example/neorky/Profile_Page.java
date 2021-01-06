@@ -49,6 +49,7 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
     DatabaseReference reff;
 
     Users users;
+    String nm_intent = "";
     LocationManager locationManager;
     Button bt;
 
@@ -73,6 +74,7 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
         else{
             //Toast.makeText(Profile_Page.this,firebaseAuth.getUid(),Toast.LENGTH_LONG).show();
             try{
+
 
                 checkenabledsettings();
                 getLocation();
@@ -112,6 +114,7 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
 
                 if(dr.equalsIgnoreCase("Please wait...") || st.equalsIgnoreCase("Please wait...")|| name.getText().toString().trim().equalsIgnoreCase("") || phone.getText().toString().trim().equalsIgnoreCase("")){
                     Intent refresh = new Intent(Profile_Page.this,Profile_Page.class);
+                    refresh.putExtra("name_of_user",name.getText().toString());
                     startActivity(refresh);
                     overridePendingTransition(0,0);
                     Toast.makeText(Profile_Page.this,"Please switch on your location service and Fill in your name", Toast.LENGTH_LONG).show();
@@ -123,6 +126,15 @@ public class Profile_Page extends AppCompatActivity implements LocationListener 
                 }
             }
         });
+        if(nm_intent.trim().equalsIgnoreCase("")){
+
+        }
+        else{
+            Intent intent = getIntent();
+            String nm_i = intent.getStringExtra("name_of_user");
+            name.setText(nm_i);
+
+        }
 
 
 
